@@ -19,10 +19,6 @@
 #
 ---
 include:
-  - board: adafruit_kb2040
-    shield: sofle_left
-  - board: adafruit_kb2040
-    shield: sofle_right
   - board: nrfmicro_13
     shield: sofle_left
   - board: nrfmicro_13
