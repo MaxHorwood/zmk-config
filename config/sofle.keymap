@@ -127,5 +127,20 @@
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_DN PG_UP>;
         };
+
+        media_layer {
+            display-name = "Medi";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp C_CALC  &none       &none         &none       &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans                  &none       &kp C_STOP  &kp C_VOL_UP  &kp C_PP    &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans                  &none       &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &none    &none  &none       &none       &none         &kp C_MUTE  &none  &none
+              &none  &none  &none  &none  &none    &none  &none       &none       &trans        &none
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_PREV C_NEXT>;
+        };
     };
 };
