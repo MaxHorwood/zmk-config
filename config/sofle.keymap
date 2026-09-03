@@ -48,7 +48,9 @@
                    &kp LGUI  &trans  &trans  &trans  &kp SPACE     &kp RET           &mo SYMBOL  &mo NUM  &mo MEDIA  &tog GAME
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp none none>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp none none>;
         };
 
         move_layer {
