@@ -20,9 +20,7 @@
 #define MEDIA      7
 
 
-&nice_view_spi {
-    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
-};
+&nice_view_spi { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
 
 / {
     combos {
@@ -59,11 +57,11 @@
         qwerty_layer {
             display-name = "Base";
             bindings = <
-&kp ESC    &none  &none     &none     &none    &none                                     &none       &none    &none      &none      &none     &none
-&kp TAB    &kp Q  &kp W     &kp E     &kp R    &kp T                                     &kp Y       &kp U    &kp I      &kp O      &kp P     &kp DEL
-&kp LSHFT  &kp A  &kp S     &kp D     &kp F    &kp G                                     &kp H       &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X     &kp C     &kp V    &kp B     &kp C_MUTE    &none  &kp N       &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                  &kp LGUI  &kp LALT  &mo FUN  &mo MOVE  &kp SPACE     &kp RET           &mo SYMBOL  &mo NUM  &mo MEDIA  &tog GAME
+&kp ESC    &none  &none     &none     &none           &none                                    &none       &none    &none      &none      &none     &none
+&kp TAB    &kp Q  &kp W     &kp E     &kp R           &kp T                                    &kp Y       &kp U    &kp I      &kp O      &kp P     &kp DEL
+&kp LSHFT  &kp A  &kp S     &kp D     &kp F           &kp G                                    &kp H       &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X     &kp C     &kp V           &kp B             &kp C_MUTE    &none    &kp N       &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+                  &kp LGUI  &kp LALT  &lt FUN K_COPY  &lt MOVE K_PASTE  &kp SPACE     &kp RET  &mo SYMBOL  &mo NUM  &mo MEDIA  &tog GAME
             >;
 
             sensor-bindings =
@@ -74,11 +72,11 @@
         game_layer {
             display-name = "Game";
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3  &kp N4  &kp N5                                  &kp N6      &kp N7   &kp N8     &kp N9     &kp N0    &kp BSPC
-&kp TAB    &kp Q   &kp W     &kp E   &kp R   &kp T                                   &kp Y       &kp U    &kp I      &kp O      &kp P     &tog GAME_ARROW
-&kp LSHFT  &kp A   &kp S     &kp D   &kp F   &kp G                                   &kp H       &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X     &kp C   &kp V   &kp B   &kp C_MUTE    &none  &kp N       &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                   &kp LGUI  &trans  &trans  &trans  &kp SPACE     &kp RET           &mo SYMBOL  &mo NUM  &mo MEDIA  &tog GAME
+&kp ESC    &kp N1  &kp N2    &kp N3  &kp N4  &kp N5                         &kp N6      &kp N7   &kp N8     &kp N9     &kp N0    &kp BSPC
+&kp TAB    &kp Q   &kp W     &kp E   &kp R   &kp T                          &kp Y       &kp U    &kp I      &kp O      &kp P     &tog GAME_ARROW
+&kp LSHFT  &kp A   &kp S     &kp D   &kp F   &kp G                          &kp H       &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X     &kp C   &kp V   &kp B   &kp C_MUTE    &none    &kp N       &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+                   &kp LGUI  &trans  &trans  &trans  &kp SPACE     &kp RET  &mo SYMBOL  &mo NUM  &mo MEDIA  &tog GAME
             >;
 
             sensor-bindings =
@@ -164,11 +162,11 @@
         media_layer {
             display-name = "Media";
             bindings = <
-&none  &none  &none  &none  &none  &none                    &kp C_AL_CALCULATOR  &none       &none         &none            &none  &none
-&none  &none  &none  &none  &none  &none                    &none                 &kp K_STOP  &kp K_VOLUME_UP    &kp K_PLAY_PAUSE  &none  &none
-&none  &none  &none  &none  &none  &none                    &none                 &kp K_PREVIOUS  &kp K_VOLUME_DOWN  &kp K_NEXT        &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none                 &none       &none         &kp K_MUTE        &none  &none
-              &none  &none  &none  &none  &none    &none  &none                 &none       &trans        &none
+&none  &none  &none  &none  &none  &none                  &kp C_AL_CALCULATOR  &none           &none              &none             &none  &none
+&none  &none  &none  &none  &none  &none                  &none                &kp K_STOP      &kp K_VOLUME_UP    &kp K_PLAY_PAUSE  &none  &none
+&none  &none  &none  &none  &none  &none                  &none                &kp K_PREVIOUS  &kp K_VOLUME_DOWN  &kp K_NEXT        &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none                &none           &none              &kp K_MUTE        &none  &none
+              &none  &none  &none  &none  &none    &none  &none                &none           &trans             &none
             >;
 
             sensor-bindings =
