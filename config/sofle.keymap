@@ -66,9 +66,7 @@
                   &kp LGUI  &kp LALT  &mo FUN  &mo MOVE  &kp SPACE     &kp RET           &mo SYMBOL  &mo NUM  &mo MEDIA  &tog GAME
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         game_layer {
@@ -81,9 +79,7 @@
                    &kp LGUI  &trans  &trans  &trans  &kp SPACE     &kp RET           &mo SYMBOL  &mo NUM  &mo MEDIA  &tog GAME
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         move_layer {
@@ -96,9 +92,7 @@
                   &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         symbol_layer {
@@ -111,9 +105,7 @@
                             &trans     &trans     &trans           &trans           &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         game_arrow_layer {
@@ -126,9 +118,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &to GAME
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         num_layer {
@@ -141,9 +131,7 @@
                    &trans     &trans     &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         fun_layer {
