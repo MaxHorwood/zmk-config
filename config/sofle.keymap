@@ -20,13 +20,27 @@
 #define MEDIA      7
 #define MAC        8
 
-ZMK_MACRO(mac_profile,
-    bindings = <&bt BT_SEL 1>, <&to MAC>;
-);
+/ {
+    macros {
+        mac_profile: mac_profile {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &bt BT_SEL 1>
+                , <&macro_tap &to MAC>
+                ;
+        };
 
-ZMK_MACRO(base_profile,
-    bindings = <&bt BT_SEL 0>, <&to QWERTY>;
-);
+        base_profile: base_profile {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &bt BT_SEL 0>
+                , <&macro_tap &to QWERTY>
+                ;
+        };
+    };
+};
 
 &lt { tapping-term-ms = <50>; };
 
