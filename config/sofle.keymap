@@ -11,14 +11,14 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define QWERTY     0
-#define GAME       1
-#define MOVE       2
-#define SYMBOL     3
-#define GAME_ARROW 4
-#define NUM        5
-#define FUN        6
-#define MEDIA      7
-#define MAC        8
+#define MAC        1
+#define GAME       2
+#define MOVE       3
+#define SYMBOL     4
+#define GAME_ARROW 5
+#define NUM        6
+#define FUN        7
+#define MEDIA      8
 
 / {
     macros {
